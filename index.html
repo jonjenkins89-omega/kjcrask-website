@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.J. Crask | Dark Romance Author | Keeping Her in Crimson Trilogy</title>
+    <meta name="description" content="K.J. Crask writes dark romance that targets the nervous system. Read the complete Keeping Her in Crimson trilogy. Free in Kindle Unlimited.">
+    <meta name="keywords" content="K.J. Crask, dark romance, Keeping Her in Crimson, KEPT, FOUND, RUINED, captive romance, romantic suspense, Kindle Unlimited, BookTok">
+    <meta name="author" content="K.J. Crask">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="K.J. Crask | Dark Romance Author">
+    <meta property="og:description" content="Dark romance that targets the nervous system. The Keeping Her in Crimson trilogy. Complete series available now.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kjcrask.com">
+    <meta property="og:image" content="https://kjcrask.com/images/kept-cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="K.J. Crask | Dark Romance Author">
+    <meta name="twitter:description" content="Dark romance that targets the nervous system.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230a0a0a' width='100' height='100' rx='20'/><text x='50' y='68' text-anchor='middle' font-size='50' font-family='serif' fill='%23c41e3a' font-weight='bold'>K</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "K.J. Crask",
+        "url": "https://kjcrask.com",
+        "description": "Dark romance author. Keeping Her in Crimson trilogy.",
+        "sameAs": []
+    }
+    </script>
+
+    <style>
+        /* ============================================
+           CUSTOM PROPERTIES
+           ============================================ */
+        :root {
+            --bg-deep: #050705;
+            --bg-primary: #0a0c0a;
+            --bg-secondary: #0f1610;
+            --bg-card: #131a14;
+            --bg-card-hover: #1a2219;
+            --accent: #c41e3a;
+            --accent-glow: rgba(196, 30, 58, 0.12);
+            --accent-hover: #d9263f;
+            --accent-dark: #8b1a2b;
+            --text-primary: #e8e0d4;
+            --text-secondary: #b0a89c;
+            --text-muted: #706860;
+            --border: #232b24;
+            --border-light: #3a4a3b;
+            --font-display: 'Cinzel', serif;
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Inter', sans-serif;
+            --max-width: 1200px;
+            --section-pad: clamp(5rem, 12vw, 9rem);
+        }
+
+        /* ============================================
+           RESET
+           ============================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+            font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--accent); text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: var(--accent-hover); }
+        ul { list-style: none; }
+
+        /* ============================================
+           UTILITIES
+           ============================================ */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+        }
+        .section-label {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.06em;
+            line-height: 1.2;
+        }
+        .section-divider {
+            width: 50px;
+            height: 1px;
+            background: var(--accent);
+            margin: 2rem auto;
+            opacity: 0.5;
+        }
+
+        /* ============================================
+           REVEAL ANIMATIONS
+           ============================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-stagger > .reveal {
+            transition-delay: calc(var(--i, 0) * 0.12s);
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.25rem 0;
+            transition: background 0.4s ease, padding 0.4s ease, backdrop-filter 0.4s ease;
+        }
+        .navbar.scrolled {
+            background: rgba(10, 12, 10, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-primary);
+            transition: color 0.3s;
+        }
+        .nav-logo:hover { color: var(--accent); }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .nav-links a {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            transition: color 0.3s;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a.active { color: var(--accent); }
+        .nav-links a.active::after { width: 100%; }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .nav-toggle span {
+            display: block;
+            width: 24px;
+            height: 1.5px;
+            background: var(--text-primary);
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* ============================================
+           HERO
+           ============================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(175deg, #050705 0%, #0a0f0a 30%, #0f1a10 55%, #0a0f0a 80%, #050705 100%);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 50% 80%, rgba(196, 30, 58, 0.06) 0%, transparent 70%),
+                radial-gradient(ellipse 100% 80% at 20% 50%, rgba(26, 46, 26, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse 100% 80% at 80% 50%, rgba(26, 46, 26, 0.2) 0%, transparent 50%);
+            z-index: 1;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, transparent 40%, var(--bg-deep) 100%);
+            z-index: 2;
+        }
+
+        /* Fog layers */
+        .hero-fog {
+            position: absolute;
+            inset: -20%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .hero-fog::before, .hero-fog::after {
+            content: '';
+            position: absolute;
+            width: 140%;
+            height: 140%;
+            border-radius: 50%;
+            opacity: 0.04;
+        }
+        .hero-fog::before {
+            top: -30%;
+            left: -20%;
+            background: radial-gradient(ellipse, rgba(196, 30, 58, 0.15) 0%, transparent 60%);
+            animation: fog-drift 20s ease-in-out infinite;
+        }
+        .hero-fog::after {
+            bottom: -40%;
+            right: -30%;
+            background: radial-gradient(ellipse, rgba(26, 60, 26, 0.2) 0%, transparent 55%);
+            animation: fog-drift 25s ease-in-out infinite reverse;
+        }
+        @keyframes fog-drift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(3%, -2%) scale(1.05); }
+            66% { transform: translate(-2%, 3%) scale(0.98); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            padding: 2rem;
+        }
+        .hero-label {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: hero-fade-in 1.2s ease 0.3s forwards;
+        }
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            letter-spacing: 0.12em;
+            line-height: 1;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: hero-fade-in 1.4s ease 0.5s forwards;
+        }
+        .hero-tagline {
+            font-family: var(--font-heading);
+            font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: hero-fade-in 1.4s ease 0.8s forwards;
+        }
+        .hero-cta {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: hero-fade-in 1.4s ease 1.1s forwards;
+        }
+        @keyframes hero-fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 2.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            opacity: 0;
+            animation: hero-fade-in 1s ease 2s forwards;
+        }
+        .scroll-hint span {
+            display: block;
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--accent), transparent);
+            margin: 0 auto;
+            animation: scroll-pulse 2s ease-in-out infinite;
+        }
+        @keyframes scroll-pulse {
+            0%, 100% { opacity: 0.3; transform: scaleY(1); }
+            50% { opacity: 0.8; transform: scaleY(1.3); }
+        }
+
+        /* ============================================
+           BUTTONS
+           ============================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 0.9rem 2.2rem;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.35s ease;
+            border: 1px solid transparent;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(196, 30, 58, 0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border-color: var(--border-light);
+        }
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .btn-sm {
+            font-size: 0.7rem;
+            padding: 0.65rem 1.5rem;
+        }
+        .btn-ghost {
+            background: transparent;
+            color: var(--accent);
+            border-color: transparent;
+            padding: 0.65rem 1rem;
+        }
+        .btn-ghost:hover {
+            color: var(--accent-hover);
+            background: var(--accent-glow);
+        }
+
+        /* ============================================
+           SERIES OVERVIEW
+           ============================================ */
+        .series-section {
+            padding: var(--section-pad) 0;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-secondary) 50%, var(--bg-deep) 100%);
+            position: relative;
+        }
+        .series-header {
+            margin-bottom: 4rem;
+        }
+        .series-covers {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: clamp(1rem, 3vw, 2.5rem);
+            margin-bottom: 3rem;
+            perspective: 1200px;
+        }
+        .series-cover {
+            flex: 0 0 auto;
+            width: clamp(160px, 22vw, 280px);
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                        box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .series-cover:nth-child(1) { transform: rotate(-3deg) translateY(8px); }
+        .series-cover:nth-child(2) { transform: translateY(-8px) scale(1.04); z-index: 2; }
+        .series-cover:nth-child(3) { transform: rotate(3deg) translateY(8px); }
+
+        .series-cover img {
+            border-radius: 4px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6),
+                        0 0 0 1px rgba(255, 255, 255, 0.04);
+        }
+        .series-cover:hover {
+            transform: translateY(-12px) rotate(0deg) scale(1.05);
+            z-index: 3;
+        }
+        .series-cover:hover img {
+            box-shadow: 0 20px 60px rgba(196, 30, 58, 0.2),
+                        0 0 0 1px rgba(196, 30, 58, 0.15);
+        }
+        .series-tagline {
+            font-family: var(--font-heading);
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .series-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .badge {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.5rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            color: var(--text-secondary);
+        }
+        .badge-accent {
+            border-color: var(--accent-dark);
+            color: var(--accent);
+        }
+
+        /* ============================================
+           BOOK SECTIONS
+           ============================================ */
+        .book-section {
+            padding: var(--section-pad) 0;
+            position: relative;
+        }
+        .book-section:nth-child(odd) {
+            background: var(--bg-primary);
+        }
+        .book-section:nth-child(even) {
+            background: var(--bg-secondary);
+        }
+        .book-layout {
+            display: grid;
+            grid-template-columns: minmax(200px, 1fr) 2fr;
+            gap: clamp(2rem, 5vw, 4rem);
+            align-items: start;
+        }
+        .book-reverse .book-layout {
+            grid-template-columns: 2fr minmax(200px, 1fr);
+        }
+        .book-reverse .book-cover-wrap {
+            order: 2;
+        }
+
+        .book-cover-wrap {
+            position: sticky;
+            top: 6rem;
+        }
+        .book-cover-img {
+            width: 100%;
+            max-width: 340px;
+            border-radius: 4px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5),
+                        0 0 0 1px rgba(255, 255, 255, 0.04);
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                        box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .book-cover-wrap:hover .book-cover-img {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 25px 70px rgba(196, 30, 58, 0.15),
+                        0 0 0 1px rgba(196, 30, 58, 0.1);
+        }
+
+        .book-number {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+        }
+        .book-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            line-height: 1;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .book-subtitle {
+            font-family: var(--font-heading);
+            font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+            font-weight: 500;
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .book-description {
+            font-family: var(--font-heading);
+            font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+            line-height: 1.9;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        .book-description p {
+            margin-bottom: 1.2rem;
+        }
+        .book-description p:last-child {
+            margin-bottom: 0;
+        }
+        .book-description em {
+            color: var(--text-primary);
+            font-style: italic;
+        }
+        .book-description strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .book-hook {
+            font-family: var(--font-heading);
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            padding-left: 1.25rem;
+            border-left: 2px solid var(--accent);
+        }
+
+        /* Trope Tags */
+        .trope-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .trope-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            padding: 0.4rem 0.85rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+        .trope-tag:hover {
+            border-color: var(--accent-dark);
+            color: var(--accent);
+            background: var(--accent-glow);
+        }
+
+        /* Spice Level */
+        .spice-level {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-bottom: 2rem;
+        }
+        .spice-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-right: 0.5rem;
+        }
+        .spice-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--border);
+        }
+        .spice-dot.filled {
+            background: var(--accent);
+            box-shadow: 0 0 6px rgba(196, 30, 58, 0.4);
+        }
+        .spice-text {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-left: 0.5rem;
+        }
+
+        /* Buy Section */
+        .buy-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .buy-section .btn { min-width: 160px; }
+        .buy-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        .ku-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--accent-dark);
+            border-radius: 2px;
+        }
+
+        /* ============================================
+           BONUS CONTENT
+           ============================================ */
+        .bonus-section {
+            padding: var(--section-pad) 0;
+            background: linear-gradient(180deg, var(--bg-deep) 0%, #0d1510 40%, #0d1510 60%, var(--bg-deep) 100%);
+            text-align: center;
+            position: relative;
+        }
+        .bonus-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 40% at 50% 50%, rgba(196, 30, 58, 0.04) 0%, transparent 100%);
+            pointer-events: none;
+        }
+        .bonus-header { margin-bottom: 3.5rem; position: relative; }
+        .bonus-subtitle {
+            font-family: var(--font-heading);
+            font-size: clamp(1rem, 1.8vw, 1.2rem);
+            font-style: italic;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 1rem auto 0;
+        }
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .bonus-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 2.5rem 2rem;
+            text-align: left;
+            transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .bonus-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+            transform-origin: left;
+        }
+        .bonus-card:hover {
+            border-color: var(--border-light);
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+        }
+        .bonus-card:hover::before {
+            transform: scaleX(1);
+        }
+        .bonus-book-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .bonus-title {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+        .bonus-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .bonus-cta {
+            margin-top: 2rem;
+        }
+
+        /* ============================================
+           ABOUT
+           ============================================ */
+        .about-section {
+            padding: var(--section-pad) 0;
+            background: var(--bg-primary);
+        }
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: clamp(2rem, 5vw, 4rem);
+            align-items: center;
+        }
+        .about-visual {
+            position: relative;
+        }
+        .about-visual-box {
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 50%, var(--bg-secondary) 100%);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .about-visual-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 30% 70%, rgba(26, 46, 26, 0.3) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(196, 30, 58, 0.05) 0%, transparent 50%);
+        }
+        .about-monogram {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 10vw, 8rem);
+            font-weight: 900;
+            color: var(--border-light);
+            letter-spacing: 0.1em;
+            position: relative;
+            z-index: 1;
+        }
+        .about-text h2 {
+            margin-bottom: 2rem;
+        }
+        .about-bio {
+            font-family: var(--font-heading);
+            font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+            line-height: 1.9;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        .about-bio strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .about-brand {
+            font-family: var(--font-heading);
+            font-size: clamp(1.15rem, 2vw, 1.4rem);
+            font-style: italic;
+            color: var(--text-primary);
+            padding-left: 1.25rem;
+            border-left: 2px solid var(--accent);
+            margin-top: 2rem;
+        }
+
+        /* ============================================
+           COMING SOON
+           ============================================ */
+        .coming-soon-section {
+            padding: var(--section-pad) 0;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-deep) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .coming-soon-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 50% 60% at 50% 60%, rgba(196, 30, 58, 0.03) 0%, transparent 100%);
+        }
+        .coming-soon-content {
+            position: relative;
+        }
+        .coming-soon-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            line-height: 1;
+        }
+        .coming-soon-tagline {
+            font-family: var(--font-heading);
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .coming-soon-year {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 2rem;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            padding: 3rem 0;
+            border-top: 1px solid var(--border);
+            background: var(--bg-deep);
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+        }
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .footer-links a {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--text-primary); }
+        .footer-copy {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            width: 100%;
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 1024px) {
+            .book-layout {
+                grid-template-columns: minmax(180px, 280px) 1fr;
+            }
+            .book-reverse .book-layout {
+                grid-template-columns: 1fr minmax(180px, 280px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(5, 7, 5, 0.97);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2.5rem;
+                z-index: 998;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links a {
+                font-size: 1rem;
+                letter-spacing: 0.2em;
+            }
+            .nav-toggle { display: flex; z-index: 999; }
+
+            .series-covers {
+                gap: 0.75rem;
+            }
+            .series-cover:nth-child(1) { transform: rotate(-2deg) translateY(4px); }
+            .series-cover:nth-child(2) { transform: translateY(-4px) scale(1.02); }
+            .series-cover:nth-child(3) { transform: rotate(2deg) translateY(4px); }
+
+            .book-layout,
+            .book-reverse .book-layout {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .book-reverse .book-cover-wrap { order: -1; }
+            .book-cover-wrap {
+                position: static;
+                display: flex;
+                justify-content: center;
+            }
+            .book-cover-img { max-width: 260px; }
+            .book-hook { text-align: left; }
+            .book-description { text-align: left; }
+            .trope-tags { justify-content: center; }
+            .buy-section { justify-content: center; }
+            .buy-meta { text-align: center; }
+
+            .bonus-grid {
+                grid-template-columns: 1fr;
+                max-width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .about-layout {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about-visual-box { max-width: 300px; margin: 0 auto; }
+            .about-brand {
+                border-left: none;
+                padding-left: 0;
+                border-top: 2px solid var(--accent);
+                padding-top: 1.25rem;
+            }
+
+            .footer-content { justify-content: center; text-align: center; }
+            .footer-links { justify-content: center; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { letter-spacing: 0.06em; }
+            .series-cover { width: clamp(100px, 28vw, 160px); }
+            .book-cover-img { max-width: 220px; }
+            .btn { width: 100%; }
+            .buy-section { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#" class="nav-logo">K.J. CRASK</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#series">The Series</a>
+                <a href="#kept">Books</a>
+                <a href="#bonus">Bonus Content</a>
+                <a href="#about">About</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero" id="hero">
+        <div class="hero-fog"></div>
+        <div class="hero-content">
+            <p class="hero-label">Dark Romance Author</p>
+            <h1 class="hero-title">K.J. CRASK</h1>
+            <p class="hero-tagline">Dark romance that targets the nervous system.</p>
+            <div class="hero-cta">
+                <a href="#series" class="btn btn-primary">Explore the Trilogy</a>
+                <a href="#bonus" class="btn btn-outline">Get Free Bonus Content</a>
+            </div>
+        </div>
+        <div class="scroll-hint"><span></span></div>
+    </section>
+
+    <!-- ============================================
+         SERIES OVERVIEW
+         ============================================ -->
+    <section class="series-section" id="series">
+        <div class="container">
+            <div class="series-header reveal">
+                <p class="section-label">Complete Trilogy</p>
+                <h2 class="section-title">THE KEEPING HER IN CRIMSON TRILOGY</h2>
+            </div>
+
+            <div class="series-covers reveal-stagger">
+                <a href="#kept" class="series-cover reveal" style="--i:0">
+                    <img src="images/kept-cover.png" alt="KEPT - Book 1 of the Keeping Her in Crimson trilogy by K.J. Crask" loading="lazy">
+                </a>
+                <a href="#found" class="series-cover reveal" style="--i:1">
+                    <img src="images/found-cover.jpg" alt="FOUND - Book 2 of the Keeping Her in Crimson trilogy by K.J. Crask" loading="lazy">
+                </a>
+                <a href="#ruined" class="series-cover reveal" style="--i:2">
+                    <img src="images/ruined-cover.jpg" alt="RUINED - Book 3 of the Keeping Her in Crimson trilogy by K.J. Crask" loading="lazy">
+                </a>
+            </div>
+
+            <p class="series-tagline reveal">Gothic settings. Morally compromised heroes. Women who don't need saving but choose dangerous men anyway.</p>
+
+            <div class="series-badges reveal">
+                <span class="badge">Complete Series</span>
+                <span class="badge badge-accent">Free in Kindle Unlimited</span>
+                <span class="badge">Dual POV</span>
+                <span class="badge">No Fade to Black</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BOOK 1: KEPT
+         ============================================ -->
+    <section class="book-section" id="kept">
+        <div class="container">
+            <div class="book-layout">
+                <div class="book-cover-wrap reveal">
+                    <a href="https://www.amazon.com/dp/B0GQXTN42K" target="_blank" rel="noopener">
+                        <img class="book-cover-img" src="images/kept-cover.png" alt="KEPT by K.J. Crask - A Dark Captive Romance" loading="lazy">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <span class="book-number reveal">Book One</span>
+                    <h3 class="book-title reveal">KEPT</h3>
+                    <p class="book-subtitle reveal">A Captive Forced Proximity Dark Romance</p>
+
+                    <div class="book-hook reveal">
+                        He cooks me eggs. He watches me sleep. He has six loaded guns and he's expecting company.
+                    </div>
+
+                    <div class="book-description reveal">
+                        <p>I woke up in a stranger's cabin with no phone, no car, and the news that my sister is dead. The man who took me says he's protecting me. He says the people who killed her are coming. He says I'm next.</p>
+                        <p>His name isn't Silas. I know that much. His body is scarred and his hands are steady enough to kill, gentle enough to cup the back of my skull like I'm the only breakable thing he's ever held.</p>
+                        <p>He loved a woman who looked like me. That woman is gone.</p>
+                        <p>I should run. Every door is unlocked. Every window opens.</p>
+                        <p><em>I stay.</em></p>
+                        <p>That should terrify me more than the men in the trees.</p>
+                    </div>
+
+                    <div class="trope-tags reveal">
+                        <span class="trope-tag">Captive Romance</span>
+                        <span class="trope-tag">Forced Proximity</span>
+                        <span class="trope-tag">Morally Grey Hero</span>
+                        <span class="trope-tag">Possessive Protector</span>
+                        <span class="trope-tag">Touch Her and Die</span>
+                        <span class="trope-tag">Grief-Bonded</span>
+                        <span class="trope-tag">Enemies to Lovers</span>
+                        <span class="trope-tag">Dual POV</span>
+                    </div>
+
+                    <div class="spice-level reveal">
+                        <span class="spice-label">Spice</span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-text">No fade to black</span>
+                    </div>
+
+                    <div class="buy-section reveal">
+                        <a href="https://www.amazon.com/dp/B0GQXTN42K" target="_blank" rel="noopener" class="btn btn-primary">Read Now</a>
+                        <span class="ku-badge">Free in Kindle Unlimited</span>
+                    </div>
+                    <p class="buy-meta reveal">Kindle $2.99 &middot; Paperback $14.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BOOK 2: FOUND
+         ============================================ -->
+    <section class="book-section book-reverse" id="found">
+        <div class="container">
+            <div class="book-layout">
+                <div class="book-info">
+                    <span class="book-number reveal">Book Two</span>
+                    <h3 class="book-title reveal">FOUND</h3>
+                    <p class="book-subtitle reveal">An Enemies-to-Lovers Dark Romantic Suspense</p>
+
+                    <div class="book-hook reveal">
+                        Three weeks. No call. No text. Her camera bag still on the kitchen table. Petra didn't pack. She didn't plan. She just disappeared.
+                    </div>
+
+                    <div class="book-description reveal">
+                        <p>Sloane Voss is a forensic scientist who reads crime scenes the way other people read body language. She's spent her career finding what powerful people want to stay lost.</p>
+                        <p>Now she's looking for her sister. And someone has sent a man to make sure she stops looking.</p>
+                        <p>Elias Vance is an operative. Trained, lethal, precise. Eleven days of surveillance. He knows her coffee order. Her walking route. The way her hands move when she's building a theory.</p>
+                        <p>He was sent to stop her.</p>
+                        <p><em>Instead, he pulls her into the dark with him.</em></p>
+                    </div>
+
+                    <div class="trope-tags reveal">
+                        <span class="trope-tag">Dark Romantic Suspense</span>
+                        <span class="trope-tag">Morally Grey Operative</span>
+                        <span class="trope-tag">On the Run</span>
+                        <span class="trope-tag">He Falls First</span>
+                        <span class="trope-tag">Possessive Protector</span>
+                        <span class="trope-tag">Touch Her and Die</span>
+                        <span class="trope-tag">Competent Heroine</span>
+                        <span class="trope-tag">Dual POV</span>
+                    </div>
+
+                    <div class="spice-level reveal">
+                        <span class="spice-label">Spice</span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-text">No fade to black</span>
+                    </div>
+
+                    <div class="buy-section reveal">
+                        <a href="https://www.amazon.com/dp/B0GR29JBSS" target="_blank" rel="noopener" class="btn btn-primary">Read Now</a>
+                        <span class="ku-badge">Free in Kindle Unlimited</span>
+                    </div>
+                    <p class="buy-meta reveal">Kindle $4.99 &middot; Paperback $14.99</p>
+                </div>
+
+                <div class="book-cover-wrap reveal">
+                    <a href="https://www.amazon.com/dp/B0GR29JBSS" target="_blank" rel="noopener">
+                        <img class="book-cover-img" src="images/found-cover.jpg" alt="FOUND by K.J. Crask - An Enemies-to-Lovers Dark Romantic Suspense" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BOOK 3: RUINED
+         ============================================ -->
+    <section class="book-section" id="ruined">
+        <div class="container">
+            <div class="book-layout">
+                <div class="book-cover-wrap reveal">
+                    <a href="https://www.amazon.com/dp/B0GRYJ3WPV" target="_blank" rel="noopener">
+                        <img class="book-cover-img" src="images/ruined-cover.jpg" alt="RUINED by K.J. Crask - A Possessive Hero Military Dark Romance" loading="lazy">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <span class="book-number reveal">Book Three</span>
+                    <h3 class="book-title reveal">RUINED</h3>
+                    <p class="book-subtitle reveal">A Possessive Hero Military Dark Romance</p>
+
+                    <div class="book-hook reveal">
+                        Six months. That's how long the quiet lasted.
+                    </div>
+
+                    <div class="book-description reveal">
+                        <p>We built a life. Portland, a house with good sightlines, morning coffee, the specific silence of two people who stopped running. I thought we earned this. I thought the worst was behind us.</p>
+                        <p>Then Elias found the name. Victor Langford. Former Deputy Director of the Defense Intelligence Agency. The man who pulled the strings while seven soldiers died.</p>
+                        <p>Langford is destroying evidence. Activating military contractors. And he is coming for my sister.</p>
+                        <p><em>I will not lose Petra again.</em></p>
+                        <p>Some ruins cannot be rebuilt. Some can only be burned to the foundation and started again.</p>
+                    </div>
+
+                    <div class="trope-tags reveal">
+                        <span class="trope-tag">Morally Grey Hero</span>
+                        <span class="trope-tag">Possessive Love</span>
+                        <span class="trope-tag">Military Hero</span>
+                        <span class="trope-tag">He Falls First</span>
+                        <span class="trope-tag">Dark Suspense</span>
+                        <span class="trope-tag">Dual POV</span>
+                        <span class="trope-tag">HEA Guaranteed</span>
+                        <span class="trope-tag">Trilogy Conclusion</span>
+                    </div>
+
+                    <div class="spice-level reveal">
+                        <span class="spice-label">Spice</span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-dot filled"></span>
+                        <span class="spice-text">No fade to black</span>
+                    </div>
+
+                    <div class="buy-section reveal">
+                        <a href="https://www.amazon.com/dp/B0GRYJ3WPV" target="_blank" rel="noopener" class="btn btn-primary">Read Now</a>
+                        <span class="ku-badge">Free in Kindle Unlimited</span>
+                    </div>
+                    <p class="buy-meta reveal">Kindle $4.99 &middot; Paperback $14.99 &middot; <strong>HEA Guaranteed</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BONUS CONTENT
+         ============================================ -->
+    <section class="bonus-section" id="bonus">
+        <div class="container">
+            <div class="bonus-header reveal">
+                <p class="section-label">Newsletter Exclusive</p>
+                <h2 class="section-title">EXCLUSIVE BONUS CONTENT</h2>
+                <p class="bonus-subtitle">Sign up to the K.J. Crask newsletter and get instant access to bonus scenes you won't find anywhere else.</p>
+            </div>
+
+            <div class="bonus-grid reveal-stagger">
+                <div class="bonus-card reveal" style="--i:0">
+                    <p class="bonus-book-label">KEPT Bonus</p>
+                    <h3 class="bonus-title">Silas's POV</h3>
+                    <p class="bonus-description">See the moment he decided to keep her. Three scenes from inside Silas's head that change everything you thought you knew about the cabin.</p>
+                    <a href="https://kjcrask.com/silas" class="btn btn-outline btn-sm">Get Access</a>
+                </div>
+
+                <div class="bonus-card reveal" style="--i:1">
+                    <p class="bonus-book-label">FOUND Bonus</p>
+                    <h3 class="bonus-title">The Folder</h3>
+                    <p class="bonus-description">Before the surveillance. Before the mission. Before Sloane. The parking garage where Elias's obsession began.</p>
+                    <a href="https://kjcrask.com/folder" class="btn btn-outline btn-sm">Get Access</a>
+                </div>
+
+                <div class="bonus-card reveal" style="--i:2">
+                    <p class="bonus-book-label">RUINED Bonus</p>
+                    <h3 class="bonus-title">Five Years</h3>
+                    <p class="bonus-description">The extended epilogue. Five years after Portland. Plus Chapter 29 from Elias's POV.</p>
+                    <a href="https://kjcrask.com/ruined" class="btn btn-outline btn-sm">Get Access</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT
+         ============================================ -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-visual reveal">
+                    <div class="about-visual-box">
+                        <span class="about-monogram">KJC</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="section-label reveal">About the Author</p>
+                    <h2 class="section-title reveal">K.J. CRASK</h2>
+                    <div class="section-divider reveal" style="margin-left:0;"></div>
+                    <p class="about-bio reveal">
+                        K.J. Crask writes dark romance that targets the nervous system. Gothic settings. Morally compromised heroes. Women who don't need saving but choose dangerous men anyway.
+                    </p>
+                    <p class="about-bio reveal">
+                        The <strong>Keeping Her in Crimson</strong> trilogy is the debut series. Captive romance, dark romantic suspense, and a military conspiracy that spans three books and two couples who were never supposed to survive each other.
+                    </p>
+                    <p class="about-brand reveal">
+                        Explicit content. No apologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         COMING SOON
+         ============================================ -->
+    <section class="coming-soon-section" id="coming-soon">
+        <div class="container">
+            <div class="coming-soon-content">
+                <p class="section-label reveal">Next Series</p>
+                <h2 class="coming-soon-title reveal">DARK SIGNAL</h2>
+                <p class="coming-soon-tagline reveal">She can read everyone. He has nothing to hide.</p>
+                <p class="coming-soon-year reveal">Coming Soon</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">K.J. CRASK</span>
+                <div class="footer-links">
+                    <a href="#series">The Series</a>
+                    <a href="#bonus">Bonus Content</a>
+                    <a href="#about">About</a>
+                    <a href="https://www.amazon.com/stores/K.J.-Crask/author/B0GQXSMX8L" target="_blank" rel="noopener">Amazon</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 K.J. Crask. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        const navThreshold = 80;
+
+        function updateNav() {
+            navbar.classList.toggle('scrolled', window.scrollY > navThreshold);
+        }
+        window.addEventListener('scroll', updateNav, { passive: true });
+        updateNav();
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('open');
+            navLinks.classList.toggle('open');
+            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        });
+
+        // Close mobile menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('open');
+                navLinks.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Scroll reveal animations
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.08,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Stagger container observer
+        const staggerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-stagger').forEach(el => staggerObserver.observe(el));
+
+        // Active nav link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+        function updateActiveLink() {
+            const scrollPos = window.scrollY + 200;
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const bottom = top + section.offsetHeight;
+                const id = section.getAttribute('id');
+                if (scrollPos >= top && scrollPos < bottom) {
+                    navAnchors.forEach(a => {
+                        a.classList.remove('active');
+                        if (a.getAttribute('href') === '#' + id) {
+                            a.classList.add('active');
+                        }
+                        // Also mark Books as active for individual book sections
+                        if (['kept', 'found', 'ruined'].includes(id) && a.getAttribute('href') === '#kept') {
+                            a.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+        window.addEventListener('scroll', updateActiveLink, { passive: true });
+    </script>
+</body>
+</html>
