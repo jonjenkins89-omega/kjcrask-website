@@ -535,6 +535,35 @@
             padding-left: 1.25rem; border-left: 2px solid var(--accent); margin-top: 2rem;
         }
 
+        /* ---- CONTACT ---- */
+        .contact {
+            padding: clamp(5rem,12vw,9rem) 0; text-align: center;
+            background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-elevated) 100%);
+            position: relative;
+        }
+        .contact-title {
+            font-size: clamp(1.5rem,3vw,2.2rem); margin-top: 0.75rem; margin-bottom: 2rem;
+        }
+        .contact-email-wrap {
+            display: inline-block; margin-top: 1rem; padding: 1.25rem 2.5rem;
+            border: 2px solid var(--accent); border-radius: 4px;
+            background: rgba(196, 30, 58, 0.06);
+            transition: background 0.3s, border-color 0.3s;
+        }
+        .contact-email-wrap:hover {
+            background: rgba(196, 30, 58, 0.12); border-color: var(--accent-hover);
+        }
+        .contact-email {
+            font-family: var(--font-display); font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            font-weight: 700; letter-spacing: 0.08em; color: var(--accent);
+            transition: color 0.3s;
+        }
+        .contact-email-wrap:hover .contact-email { color: var(--accent-hover); }
+        .contact-sub {
+            font-family: var(--font-heading); font-size: clamp(1rem,1.5vw,1.2rem);
+            color: var(--text-secondary); margin-top: 1.5rem; line-height: 1.8;
+        }
+
         /* ---- COMING SOON ---- */
         .soon {
             padding: clamp(5rem,12vw,9rem) 0; text-align: center;
@@ -659,6 +688,7 @@
                 <a href="#bonus">Bonus Content</a>
                 <a href="#subscribe">Subscribe</a>
                 <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -939,6 +969,18 @@
         </div>
     </section>
 
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <p class="label reveal">Get in Touch</p>
+            <h2 class="title contact-title reveal">CONTACT</h2>
+            <a href="mailto:contact@kjcrask.com" class="contact-email-wrap reveal">
+                <span class="contact-email">contact@kjcrask.com</span>
+            </a>
+            <p class="contact-sub reveal">Publishing inquiries, press, collaborations.</p>
+        </div>
+    </section>
+
     <!-- COMING SOON -->
     <section class="soon" id="coming-soon">
         <div class="container">
@@ -969,6 +1011,7 @@
                     <a href="#series">The Series</a>
                     <a href="#bonus">Bonus Content</a>
                     <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
                     <a href="https://www.amazon.com/stores/K.J.-Crask/author/B0GQXSMX8L" target="_blank" rel="noopener noreferrer">Amazon</a>
                 </div>
                 <p class="footer-copy">&copy; 2026 K.J. Crask. All rights reserved.</p>
